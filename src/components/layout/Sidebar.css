@@ -1,0 +1,85 @@
+.sidebar {
+    width: 225px;
+    flex-shrink: 0;
+}
+
+.profile-card {
+    overflow: hidden;
+    padding: 0 !important;
+    /* Override generic card padding */
+    text-align: center;
+}
+
+.sidebar-cover {
+    height: 60px;
+    background: var(--primary);
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+
+.sidebar-avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: 3px solid var(--bg-card);
+    margin-top: -36px;
+    object-fit: cover;
+    background: var(--bg-input);
+}
+
+.sidebar-info {
+    padding: 1rem;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.sidebar-name {
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 0.25rem;
+}
+
+.sidebar-headline {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+}
+
+.sidebar-stats {
+    padding: 0.75rem 0;
+}
+
+.sidebar-stat {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25rem 1rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.sidebar-stat:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.stat-label {
+    color: var(--text-muted);
+}
+
+.stat-value {
+    color: var(--primary);
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    color: var(--text-main);
+    font-weight: 600;
+    border-top: 1px solid var(--glass-border);
+    cursor: pointer;
+}
+
+.sidebar-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+}

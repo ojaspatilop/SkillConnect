@@ -1,0 +1,6 @@
+/* Styles moved to Tailwind classes in components */
+.auth-container {
+    @apply min-h-screen flex items-center justify-center p-4 bg-background-light dark:bg-background-dark;
+    background-image: radial-gradient(circle at top right, rgba(59, 130, 246, 0.1), transparent 40%),
+        radial-gradient(circle at bottom left, rgba(99, 102, 241, 0.1), transparent 40%);
+}

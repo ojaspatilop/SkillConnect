@@ -1,0 +1,40 @@
+.main-layout {
+    padding-top: var(--nav-height);
+    /* Space for fixed navbar */
+    min-height: 100vh;
+    background: var(--bg-dark);
+}
+
+.layout-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.layout-main {
+    flex: 1;
+    max-width: 600px;
+    /* Feed width */
+    min-width: 0;
+    /* Flexbox trick for text overflow */
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .right-sidebar {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    .layout-main {
+        max-width: 100%;
+    }
+}
